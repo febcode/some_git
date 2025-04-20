@@ -1,5 +1,26 @@
 ## **IMP Commands for GIT **
 
+**Adding a local repository to GitHub using Git**
+- Before you can add your local repository to GitHub using Git, you must authenticate to GitHub on the command line. For more information, see About authentication to GitHub.
+- Create a new repository on GitHub. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub. 
+- At the top of your repository on GitHub's Quick Setup page, click  to copy the remote repository URL.
+- Open Git Bash.
+- Change the current working directory to your local project.
+- To add the URL for the remote repository where your local repository will be pushed, run the following command. Replace REMOTE-URL with the repository's full URL on GitHub.
+```
+git remote add origin REMOTE-URL
+```
+- For more information, see Managing remote repositories.
+- To verify that you set the remote URL correctly, run the following command.
+```
+git remote -v
+```
+- To push the changes in your local repository to GitHub, run the following command.
+```
+git push origin main
+```
+- If your default branch is not named "main," replace "main" with the name of your default branch eg master
+
 **Git Tagging**:
 
 
@@ -21,6 +42,6 @@
      > git checkout -b ＜new-branch＞ ＜existing-branch＞(create new branch from existing )
      
 
-**Cherry picking **:
+**Cherry picking**:
 
     > git cherry-pick ＜commit1＞ ＜commit2＞ 
