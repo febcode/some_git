@@ -1,4 +1,4 @@
-## **IMP Commands for GIT **
+## **IMP Commands for GIT**
 
 **Adding a local repository to GitHub using Git**
 - Before you can add your local repository to GitHub using Git, you must authenticate to GitHub on the command line. For more information, see About authentication to GitHub.
